@@ -10,102 +10,85 @@
         body { font-family: 'Cairo', sans-serif; }
         .bg-qatar { background-color: #8D1B3D; } /* اللون العنابي القطري */
         .text-qatar { color: #8D1B3D; }
+        .border-qatar { border-color: #8D1B3D; }
     </style>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 text-gray-900">
 
     <nav class="bg-white shadow-lg sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex items-center">
-                    <span class="text-2xl font-bold text-qatar">سداد <span class="text-gray-700">قطر</span></span>
+                    <span class="text-3xl font-bold text-qatar">سداد <span class="text-gray-700">قطر</span></span>
                 </div>
-                <div class="hidden md:flex items-center space-x-reverse space-x-8">
-                    <a href="#home" class="text-gray-700 hover:text-qatar font-medium">الرئيسية</a>
-                    <a href="#about" class="text-gray-700 hover:text-qatar font-medium">من نحن</a>
-                    <a href="#services" class="text-gray-700 hover:text-qatar font-medium">خدماتنا</a>
-                    <a href="#contact" class="bg-qatar text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition">طلب دعم</a>
+                <div class="flex items-center space-x-reverse space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-qatar font-medium transition text-lg">الرئيسية</a>
+                    <a href="#about" class="text-gray-700 hover:text-qatar font-medium transition text-lg">من نحن</a>
+                    <a href="#services" class="text-gray-700 hover:text-qatar font-medium transition text-lg">خدماتنا</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <section id="home" class="relative bg-white py-20 px-4">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2 mb-10 md:mb-0">
-                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+    <section id="home" class="relative bg-white py-24 md:py-32 px-4 border-b">
+        <div class="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
+            <div class="md:w-3/5 text-center md:text-right">
+                <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-8 leading-tight">
                     ندعم طموحك الأكاديمي في <span class="text-qatar">دولة قطر</span>
                 </h1>
-                <p class="text-gray-600 text-lg mb-8">
-                    نحن هنا لنذلل العقبات المالية أمام الطلاب المتميزين، ونساعدك في تسديد الأقساط الجامعية لضمان مستقبلك الدراسي.
+                <p class="text-gray-600 text-xl mb-12 max-w-2xl mx-auto md:mx-0">
+                    نحن هنا لنذلل العقبات المالية أمام الطلاب المتميزين، ونساعدك في تسديد الأقساط الجامعية لضمان مستقبلك الدراسي في أرقى الجامعات القطرية.
                 </p>
-                <div class="flex space-x-reverse space-x-4">
-                    <a href="#contact" class="bg-qatar text-white px-8 py-3 rounded-lg font-bold shadow-lg hover:shadow-xl transition">قدم الآن</a>
-                    <a href="#services" class="border border-qatar text-qatar px-8 py-3 rounded-lg font-bold hover:bg-qatar hover:text-white transition">تعرف علينا</a>
+                <div class="flex flex-wrap gap-6 justify-center md:justify-start">
+                    <a href="#about" class="bg-qatar text-white px-10 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition flex items-center gap-2">تواصل معنا 📞</a>
+                    <a href="#services" class="border-2 border-qatar text-qatar px-10 py-4 rounded-xl font-bold text-lg hover:bg-qatar hover:text-white transition">تعرف على خدماتنا</a>
                 </div>
             </div>
-            <div class="md:w-1/2 flex justify-center">
-                <img src="https://images.unsplash.com/photo-1541339907198-e08756defe03?auto=format&fit=crop&w=600&q=80" alt="Education" class="rounded-2xl shadow-2xl w-full max-w-md">
+            <div class="md:w-2/5 flex justify-center">
+                <div class="relative overflow-hidden rounded-3xl shadow-2xl p-4 bg-gray-100 border border-qatar">
+                    <img src="https://images.unsplash.com/photo-1541339907198-e08756defe03?auto=format&fit=crop&w=600&q=80" alt="جامعات قطر" class="rounded-2xl w-full max-w-sm">
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="py-20 bg-gray-100 px-4">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-6 text-gray-800">من نحن</h2>
-            <p class="text-gray-600 leading-relaxed text-lg">
-                مبادرة "سداد قطر" هي منصة تهدف إلى تمكين الطلاب في الجامعات القطرية من خلال توفير الدعم المالي اللازم لتغطية الرسوم الدراسية، إيماناً منا بأن التعليم هو الركيزة الأساسية لبناء المجتمع.
+    <section id="about" class="py-24 bg-gray-100 px-4">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8 text-gray-800">من نحن</h2>
+            <p class="text-gray-700 leading-relaxed text-xl max-w-4xl mx-auto">
+                مبادرة "سداد قطر" هي منصة تهدف إلى تمكين الطلاب المتفوقين في دولة قطر من خلال توفير الدعم المالي واللوجستي اللازم لتغطية الرسوم الدراسية وتكاليف المعيشة، إيماناً منا بأن الاستثمار في التعليم هو استثمار في مستقبل الأمة.
             </p>
         </div>
     </section>
 
-    <section id="services" class="py-20 px-4">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">خدماتنا</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-xl shadow-md border-t-4 border-qatar hover:scale-105 transition-transform">
-                    <div class="text-qatar mb-4 text-3xl">🎓</div>
-                    <h3 class="text-xl font-bold mb-3">تسديد الرسوم</h3>
-                    <p class="text-gray-600">تغطية جزئية أو كاملة للأقساط الجامعية المتعثرة للطلاب المتميزين.</p>
+    <section id="services" class="py-24 px-4">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">خدماتنا الرئيسية</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-white p-10 rounded-2xl shadow-xl border-t-8 border-qatar hover:scale-105 transition-transform duration-300">
+                    <div class="text-qatar mb-6 text-5xl">🏛️</div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900">تسديد الرسوم</h3>
+                    <p class="text-gray-600 text-lg leading-relaxed">تغطية جزئية أو كاملة للأقساط الجامعية، شاملة رسوم التسجيل والامتحانات، للطلاب المتعثرين.</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-md border-t-4 border-qatar hover:scale-105 transition-transform">
-                    <div class="text-qatar mb-4 text-3xl">📚</div>
-                    <h3 class="text-xl font-bold mb-3">الاستشارات الأكاديمية</h3>
-                    <p class="text-gray-600">توجيه الطلاب لاختيار التخصصات الأكثر طلباً في سوق العمل القطري.</p>
+                <div class="bg-white p-10 rounded-2xl shadow-xl border-t-8 border-qatar hover:scale-105 transition-transform duration-300">
+                    <div class="text-qatar mb-6 text-5xl">🎓</div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900">الاستشارات الأكاديمية</h3>
+                    <p class="text-gray-600 text-lg leading-relaxed">توجيه الطلاب نحو التخصصات المطلوبة في قطر، وتوفير برامج تدريب وتوجيه مهني.</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-md border-t-4 border-qatar hover:scale-105 transition-transform">
-                    <div class="text-qatar mb-4 text-3xl">🤝</div>
-                    <h3 class="text-xl font-bold mb-3">شراكات مجتمعية</h3>
-                    <p class="text-gray-600">ربط الطلاب بمؤسسات خيرية ومانحين لدعم رحلتهم التعليمية.</p>
+                <div class="bg-white p-10 rounded-2xl shadow-xl border-t-8 border-qatar hover:scale-105 transition-transform duration-300">
+                    <div class="text-qatar mb-6 text-5xl">🤝</div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900">شراكات مجتمعية</h3>
+                    <p class="text-gray-600 text-lg leading-relaxed">بناء شراكات مع مؤسسات تعليمية قطرية وخيرية لتأمين منح إضافية وفرص تدريب.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-20 bg-gray-900 text-white px-4">
-        <div class="max-w-3xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-10">تقديم طلب دعم</h2>
-            <form class="space-y-6 text-gray-900">
-                <div class="grid md:grid-cols-2 gap-6">
-                    <input type="text" placeholder="الاسم الكامل" class="p-3 rounded-lg w-full outline-none focus:ring-2 focus:ring-qatar">
-                    <input type="email" placeholder="البريد الإلكتروني" class="p-3 rounded-lg w-full outline-none focus:ring-2 focus:ring-qatar">
-                </div>
-                <select class="p-3 rounded-lg w-full outline-none focus:ring-2 focus:ring-qatar">
-                    <option value="">اختر الجامعة في قطر</option>
-                    <option>جامعة قطر</option>
-                    <option>جامعة حمد بن خليفة</option>
-                    <option>المدينة التعليمية</option>
-                    <option>أخرى</option>
-                </select>
-                <textarea placeholder="اشرح حالتك باختصار" rows="4" class="p-3 rounded-lg w-full outline-none focus:ring-2 focus:ring-qatar"></textarea>
-                <button type="submit" class="w-full bg-qatar text-white font-bold py-3 rounded-lg hover:bg-opacity-90 transition">إرسال الطلب</button>
-            </form>
-        </div>
-    </section>
-
-    <footer class="bg-white py-8 border-t">
-        <div class="text-center text-gray-500">
-            <p>© 2026 سداد قطر - جميع الحقوق محفوظة</p>
+    <footer class="bg-white py-12 border-t mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-xl font-bold text-qatar mb-3">سداد قطر</p>
+            <p class="text-lg text-gray-600">نحن هنا لندعم مستقبلك الدراسي.</p>
+            <p class="text-gray-500 mt-6 text-lg">© 2026 سداد قطر - جميع الحقوق محفوظة</p>
         </div>
     </footer>
 
